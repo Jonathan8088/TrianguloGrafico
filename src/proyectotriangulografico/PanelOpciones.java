@@ -24,26 +24,35 @@ public class PanelOpciones extends JPanel implements ActionListener{
     
     private JButton btnOpcion2;
     
-    private static final String OPCION_1 = "OPCION_1";
+    private JButton btnOpcion3;
     
-    private static final String OPCION_2 = "OPCION_2";
+    private static final String OPCION_1 = "Puntos Cuadrado";
+    
+    private static final String OPCION_2 = "Puntos Circulo";
+    
+    private static final String OPCION_3 = "Puntos Triangulo";
     
         
     public PanelOpciones() {    
         
         setBackground(Color.WHITE);
         setBorder(new TitledBorder("OPCIONES"));
-        setLayout(new GridLayout(1, 2));
+        setLayout(new GridLayout(1, 3));
         
-        btnOpcion1 = new JButton("OPCION 1");
+        btnOpcion1 = new JButton("Puntos Cuadrado");
         btnOpcion1.setActionCommand(OPCION_1);
         btnOpcion1.addActionListener(this);
         add(btnOpcion1);
         
-        btnOpcion2 = new JButton("OPCION 2");
+        btnOpcion2 = new JButton("Puntos Circulo");
         btnOpcion2.setActionCommand(OPCION_2);
         btnOpcion2.addActionListener(this);
         add(btnOpcion2);
+        
+        btnOpcion3 = new JButton("Puntos Circulo");
+        btnOpcion3.setActionCommand(OPCION_3);
+        btnOpcion3.addActionListener(this);
+        add(btnOpcion3);
         
         
     }

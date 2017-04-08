@@ -69,12 +69,18 @@ public class PanelBotones extends JPanel implements ActionListener{
         
     }
 
+    public void cambiarInformacion( double perimetro, double area, double altura )
+    {
+        etiquetaArea.setText( "Área: " + ( area )  );
+        etiquetaPerimetro.setText( "Perímetro: " + ( perimetro ) );
+        etiquetaAltura.setText( "Altura: " + ( altura )  );
+    }
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
             case COLOR_LINEA:
-                System.out.print("Imprimio boton color linea");
-                break;
+                DialogoPuntos d= new DialogoPuntos();
             case COLOR_FONDO:
                 System.out.print("Imprimio boton color fondo");
                 break;        
